@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="pokedex.css">
+    
+</head>
+<body>
+    
+    <div>
+        <div class="pokedex">
+            <h1>Pokedex LaunchX</h1>
+            <div class="pokemon">
+                <div class="imagen">
+                    <img src="pokeball.png" alt="Pokemon" id="pokeImg" width="150px" class="pokImg">
+                </div>
+                <div class="stats">
+                    <label>Nombre: <br><b id="pokeNombr"></b></label><br>
+                    <label><p>Tipo Pokemon: </p><b id="pokeTipo"></b></label>
+                    <br>
+                    <label id="statMain"><p>Estadisticas:</p>
+                    
+                    </label>
+                    <br>
+                    <label>Movimiento:<br> <b id="pokeMove"></b></label>
+                    <br>
+                    
+                </div>
+            </div>
+            <div class="buscaPokemon">
+                <form>
+                    <div>
+                        <input type="text" placeholder="Busca tu Pokemon" id="pokeName" name="pokeName" class="pokeBusca">
+                    </div>
+                    <div>
+                        <input type="button" onclick="fetchPokemon();" class="buscarPoke" value="">
+                    </div>
+                    <div >
+                        <input type="reset" value="" class="buscar1">
+                    </div>
+                    <div >
+                        <input type="submit" value="" class="buscar2">
+                    </div>
+                </form>
+            </div>
+            <br>
+            <div>
+                <h1 class="muestraPokemon" ></h1>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="pokedex.js"></script>
+</footer>
+</html>
